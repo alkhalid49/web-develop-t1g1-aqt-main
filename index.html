@@ -1,0 +1,222 @@
+<!--
+
+All images I drew are just for sample
+I just coded all three pages roughly for sample in order to see the great framework Louis gave us
+Of course, I do not mean that we must use this HTML for our Team assignment
+(Shun OSAWA)
+
+TO DO 
+・Shun is to code all three pages, CSS,  roughly--DONE
+・Shun is to give a grid structure and put a header and a footer on all three pages--DONE
+・Shun is to code the whole index.html__DONE
+・Louis is to code the whole page1.html
+・Coding ticket.html
+・make the Q&A collapsible button
+・Replace sample images with colorful images
+・All three pages' look are completed
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>our theme parks</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a website for a community of people interested in reading books for discussion and sharing.">
+    <meta name="author" content="web-develop-t1g1-aqt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="120">
+    <meta name="keywords" content="???'">
+    <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
+    <link rel="stylesheet" href="StyleSheet/style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</head>
+
+<body class = "mainPage">
+    <header>
+            Logo
+    </header>
+    
+    <nav>
+        <ol>
+        <li><a href="index.html">Top Page</a></li>
+        <li><a href="page1.html">page 1</a></li>
+        <li><a class="ticketButton" href="ticket.html">Ticket</a></li>
+        </ol>
+    </nav>
+    
+    <div id = "mainAd">
+        
+        <!-- Picture slide show -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/mainAd.jpg" class="d-block w-100" alt="theme park image">
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="img/mainAd.jpg" class="d-block w-100" alt="theme park image">
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="img/mainAd.jpg" class="d-block w-100" alt="theme park image">
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <br>
+        <br>
+        
+        <!-- Review -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/transparent.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color:black">Guest Review</h5>
+                        <p style="color:black">Name: test</p>
+                        <p style="color:black">Comment: test </p>
+                        <p style="color:black">Review: test</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="img/transparent.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color:black">Guest Review</h5>
+                        <p style="color:black">Name: test</p>
+                        <p style="color:black">Comment: test</p>
+                        <p style="color:black">Review: test</p>
+                    </div>
+                </div>    
+                
+                <div class="carousel-item">
+                    <img src="img/transparent.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color:black">Guest Review</h5>
+                        <p style="color:black">Name: test</p>
+                        <p style="color:black">Comment: test</p>
+                        <p style="color:black">Review: test</p>
+                    </div>
+                </div>
+            </div>
+            
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+            
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+        
+    </div>
+
+    <!-- index page is the structure that is three columns named left, middle, and right -->
+    <aside ID = "leftCard">
+        <a href="page1.html"><img src="img/sample_1.jpg" alt="Rides & Attractions image" width="410" height="232"></a>
+        <p>Rides & Attractions</p>
+        <p>-The Ferris Wheel:
+"If you're not afraid of heights, then you may consider planning to ride the world's most famous ferris wheel. Work up the courage to take a ride on the tallest ferris wheel out there! One thing is for sure: this observation wheel provides spectacular views that you won't forget anytime soon."</p>
+    </aside>
+
+    <div ID = "middleCard">
+        <a href="page1.html"><img src="img/sample_2.jpg" alt="Dining image" width="410" height="232"></a>
+        <p>Dining</p>
+        <p>-Three Broomsticks restaurant:
+Harry Porter rustic tavern with good meals and the special Butterbeer.
+-Japanese restaurant Wa:
+Beautiful, healthy, and artistic.
+-Macdolald
+The most famous, delicious burger shop.</p>
+    </div>
+
+    <aside ID = "rightCard">
+        <a href="page1.html"><img src="img/sample_3.png" alt="Events & Shows image" width="410" height="232"></a>
+        <p>Events & Shows</p>
+        <p>-Joy of holiday season:
+Christmas parade with Mickey & Minnie on Christmas Eve.
+-Bear-y tales show:
+4D interactive dark ride through show scenes of an adventure of Boysen Bear and Girlsen Bear.</p>
+    </aside>
+
+    <div id = "faq">
+        
+        <h2>FAQ.</h2>
+        <h3>Lost & Found</h3>
+        <dl>
+            <dt>Q: Did you misplace or lose any of your items?</dt>
+            <dd>- A: Please call 1-800-423-4324 or go to our front desk to report a case.</dd>
+        </dl>
+        <h3>Pre-arrival tips</h3>
+        <dl>
+            <dt>Q: How much does it costs to park?</dt>
+            <dd>- A: Parking costs $25 usd/day.</dd>
+            <dt>Q: Does the park open on National Holidays?</dt>
+            <dd>- A: Park opens for the whole year, however holiday hours may vary.</dd>
+            <dt>Q: Are masks required during Covid-19 pandemic?</dt>
+            <dd>- A: Masks are required until further notice.</dd>
+            <dt>Q: Are pets allowed in the park?</dt>
+            <dd>- A: Pets are not allowed in the park, except service animals.</dd>
+            <dt>Q: Are there accesible for wheelchair?</dt>
+            <dd>- A: Please rest assured that our park listed in Wheelchair Accessible Theme Parks ranking 2021.</dd>
+        </dl>
+        <h3>Access to money</h3>
+        <dl>
+            <dt>Q: Do you need access to money?</dt>
+            <dd>- A: All our facilities now operate cashless! We only accept debit, credit, Google Pay, Apple Pay and Alipay.</dd>
+        </dl>
+        <h3>Medical help</h3>
+        <dl>
+            <dt>Q: Have you sustained an injury on our park grounds?</dt>
+            <dd>- A: For emergencies, please call at 1-800-777-MEDIC or visit our medical center beside the front gates. Our trained medics are available during operational hours.</dd>
+        </dl>
+        <h3>Covid protocols</h3>
+        <dl>
+            <dt>Q: What are the protocols for covid?</dt>
+            <dd>- A: Proof of Covid vaccination and masks are required for entry.</dd>
+        </dl>
+        
+    </div>
+
+    <footer>
+        <ul>
+            <li>Our theme park</li>
+            <br>
+            <li id = "contact">Contact us: Office: Unit 101</li>
+            <li id = "contact">Email: park@theme.com</li>
+            <li id = "contact">Phone: (888)-888-888</li>
+            <li id = "contact">Fax: (888)-888-8800</li>         
+        </ul>
+    </footer> 
+</body>

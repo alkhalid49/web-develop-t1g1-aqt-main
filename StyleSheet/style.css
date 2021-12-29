@@ -1,0 +1,413 @@
+/* Control the structure of the each page such that mainPage(index.html), page1, and page2 */
+
+.mainPage
+{
+    display: grid;
+    margin: 0px;
+
+    grid-template-rows: 80px 80px auto auto auto 300px;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "mainAd mainAd mainAd"
+        "leftCard middleCard rightCard"
+        "faq faq faq"
+        "footer footer footer";
+}
+/*
+.ticketPage
+{
+    display: grid;
+    margin: 0px;
+
+    grid-template-rows: 80px 80px auto auto 300px;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "mainAd mainAd mainAd"
+        "leftCard middleCard rightCard"
+        "footer footer footer";
+}
+*/
+body > *
+{
+    margin: 3px;
+    padding: 20px;
+}
+
+/* end the structure----------------------------------------------------------------------------------------------- */
+
+/* Header, navigation bar, and footer are in common all pages*/
+
+/* Header */
+header
+{
+    grid-area: header;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+
+    text-align: left;
+    /* Pin the header to the upper bound */
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    /* Prevent overlaping*/
+    z-index:10;
+}
+
+/* Navigation bar */
+nav
+{
+    grid-area: nav;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    width:100%;
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    left: 0px;
+    /* Prevent overlaping*/
+    z-index:10;
+}
+nav ol
+{
+    border:1px solid lightgrey;
+    /* left is upper and bottom margin, right is left and right margin*/
+    border-width:5px 0px;
+    /* left margin*/
+    padding:0;
+    text-align:left;
+}
+nav li
+{
+    
+    display:inline;
+    border-radius: 5px;;
+    padding:5px;
+}
+nav li a
+{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: grey;
+    display:inline-block;
+    padding:6px;
+}
+
+/* footer */
+#contact
+{
+    font-size: 0.6em;
+}
+footer
+{
+    grid-area: footer;
+    display: block;
+    background: grey;
+    width:100%;  
+    padding:40px;
+}
+footer ul
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.8em;
+    color: white;
+    padding:10px;
+}
+
+/* end Header, navigation bar, and footer------------------------------------------------------------------------------------------ */
+
+/* index page structure */
+#mainAd
+{
+    grid-area: mainAd;
+    background: #afa;
+}
+#leftCard
+{
+    grid-area: leftCard;
+    background: #aaf;
+    text-align: center;
+}
+#middleCard
+{
+    grid-area: middleCard;
+    background: #aaf;
+    text-align: center;
+}
+#rightCard
+{
+    grid-area: rightCard;
+    background: #faf;
+    text-align: center;
+}
+#faq
+{
+    grid-area: faq;
+    background: white;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+/* end index structure----------------------------------------------------------------------------------------------- */
+.ticketButton
+{
+    border: none;
+    background-color: orangered;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/* ticket  */
+
+.w-layout-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+  }
+  
+  
+  
+  .section_ticket_hero {
+    margin-top: 100px;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/disneyland_hotel.jpg');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/disneyland_hotel.jpg');
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .heading {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .section {
+    padding: 40px 20px;
+  }
+  
+  .section.package {
+    background-color: #f2f4ff;
+  }
+  
+  .grid {
+    grid-template-rows: auto;
+  }
+  
+  .feature-grid {
+    margin-bottom: 32px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  
+  .check-svg {
+    margin-right: 12px;
+  }
+  
+  .title-wrap {
+    display: block;
+    margin-bottom: 64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .detail-green {
+    color: #009a91;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .display-heading {
+    color: #100c69;
+    font-size: 44px;
+    line-height: 1.2;
+  }
+  
+  .discount-container {
+    position: absolute;
+    left: auto;
+    top: -4%;
+    right: 7%;
+    bottom: auto;
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 12px;
+    background-color: #009a91;
+  }
+  
+  .button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #009a91;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .card-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 38px 24px 24px;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: #fff;
+  }
+  
+  .card-container.relative {
+    position: relative;
+  }
+  
+  .price {
+    margin-bottom: 12px;
+    color: #100c69;
+    font-size: 32px;
+    line-height: 1.1;
+  }
+  
+  .feature-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pricing_container {
+    width: 100%;
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+  }
+  
+  .payment-terms {
+    font-size: 12px;
+  }
+  
+  .pricing-card-grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+  }
+  
+  .discount-heading {
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .detail {
+    margin-bottom: 0px;
+    color: #4a556c;
+    font-weight: 400;
+  }
+  
+  .pricing-description {
+    margin-bottom: 20px;
+    color: #4a556c;
+    font-weight: 400;
+  }
+  
+  .package-heading {
+    margin-bottom: 12px;
+    color: #100c69;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .span-green-underline {
+    position: relative;
+    display: inline;
+  }
+  
+  @media screen and (max-width: 991px) {
+    
+  
+    .container-2 {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .pricing-card-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .card-container.relative {
+      margin-top: 40px;
+    }
+  
+    .pricing-card-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .display-heading {
+      font-size: 32px;
+    }
+  
+    .pricing-card-grid {
+      grid-column-gap: 42px;
+      grid-row-gap: 42px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+    }
+  }
+  
+  #div {
+    align-self: center;
+  }
+  
+  @media screen and (max-width: 767px) {
+    #div {
+      justify-self: center;
+    }
+  }
